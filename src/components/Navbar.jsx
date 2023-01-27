@@ -16,7 +16,6 @@ const Navbar = () => {
         <div className="text-2xl font-semibold">
           <Link to="/">ShopApp</Link>
         </div>
-
         <div className="flex-1">
           <input
             type="text"
@@ -24,14 +23,12 @@ const Navbar = () => {
             className="w-full px-4 py-2 shadow-sm rounded-md"
           />
         </div>
-
         <div
           className="lg:hidden cursor-pointer hover:text-gray-400"
           onClick={() => setOpen(!open)}
         >
           {!open ? <FaBars /> : <FaTimes />}
         </div>
-
         <div
           className={`w-full lg:flex lg:w-auto flex flex-col lg:flex-row lg:flex-[2] justify-between ${
             !open ? "hidden" : ""
@@ -66,7 +63,6 @@ const Navbar = () => {
               Help
             </NavLink>
           </div>
-
           <div className="flex flex-wrap items-center order-first lg:order-last">
             <p className="lg:hidden w-full text-sm mr-2 text-center my-4">
               Welcome.{" "}
