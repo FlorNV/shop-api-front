@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { FaRegHeart } from "react-icons/fa";
 
-const Card = ({ product }) => {
+const ProductCard = ({ product }) => {
   const { _id, title, image, price, categories } = product;
 
   const formattedPrice = new Intl.NumberFormat("es-AR", {
@@ -33,4 +33,4 @@ const Card = ({ product }) => {
   );
 };
 
-export default Card;
+export default ProductCard;
